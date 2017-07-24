@@ -1,0 +1,81 @@
+java笔记
+
+第一记：java基本数据类型
+		1.byte  	8位，有符号，以二进制补码的整数	范围：-2^7~2^7-1 (-128~127)
+		2.short 	16位，有符号，以二进制补码的整数	范围：-2^15~2^15-1 (-32768~32767)
+		3.int 		32位							范围：-2^31~2^31-1 (-2147483648~2147483647)
+		4.long		64位
+		5.float		32位
+		6.double	64位
+		7.bool		单一位
+		8.char		单一的16进制unicode字符
+
+第二记：java变量类型
+	   	1. 类变量		独立于方法之外，static修饰
+	   	2. 实例变量	独立于方法之外，不用static修饰
+	   	3. 局部变量	类的方法中的变量
+
+	   	例子：public class Variable{
+    			static int allClicks=0;    // 类变量
+    			String str="hello world";  // 实例变量
+    			public void method(){
+       			 	int i =0;  // 局部变量
+    			}
+			}
+
+第三记：java修饰符
+		1.访问修饰符  default/public/protected/private
+		2.非访问修饰符		static/final(常量修饰符)/abstract(抽象类和抽象方法)/synchronized volatile(用于多线程)
+
+第四记：java运算符
+		1.算数运算符	+ - * / % ++ --
+		2.关系运算符 	== != > < =<  >=
+		3.位运算符	& | ^ ~ << >> >>>
+		4.逻辑运算符	&& || ！
+		5.赋值运算符 	= += -= *= /= (%)= <<= >>= &= |= !=
+		6.条件运算符 	:?   (a>b: a?b)
+		7.instanceof运算符	检查对象是否是一个特定的类型
+			例子：   publicString name = "James";
+					boolean result = name instanceof String; // 由于 name 是 String 类型，所以返回真
+		8.运算符优先级...
+
+第五记：java循环结构
+		1.while 循环
+			例子：while( 布尔表达式 ) {
+  					//循环内容
+				}
+		2.do...while 循环
+			例子：do {
+       				//代码语句
+				}while(布尔表达式);
+		3.for 循环
+			例子：for(初始化; 布尔表达式; 更新) {
+    			//代码语句
+			}
+		4.for 增强for循环 (类似OC中的for...in)
+			例子：for(声明语句 : 表达式)
+			{
+  				//代码句子
+			}
+		5.break 跳出最里层的循环
+			例子：break;
+		6.continue
+			例子：continue;
+
+第六记：java分支结构(判断语句)
+		1.if...else
+		2.switch
+
+
+
+
+
+
+
+
+
+
+
+
+
+
