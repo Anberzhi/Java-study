@@ -1,0 +1,79 @@
+JavaNotes-02
+
+第一记:	Number & Math类
+	1.(Integer/Long/Float/Byte/Double/Short)都是抽象类Number的子类 ，属于java.lang包
+	2.Math类包含了用于执行基本数学运算的属性和方法，如初等数学、对数、平方根、三角函数等。
+
+第二记:	Character类 
+	1.对单个字符进行操作，包含一个基本类型char的值
+	2.Character类方法：
+			(1).isLetter()	是否是一个字母
+			(2).isDigit()
+			(3).isWhitespace()
+			(4).isUpperCase()
+			(5).isLowerCase()
+			(6).toUpperCase()
+			(7).toLowerCase()
+			(8).toString
+
+第三记:	String类
+	1.string属于对象
+	2.string1.concat(string2); 连接字符串
+	3.String类方法
+		(1).int compareTo(String str)
+		(2).String concat(String str)
+		(3).int length()
+		(4).char[] toCharArray()
+		(5).String toString()
+		(6).String trim()
+		(7).int indexOf()
+
+第四记： StringBuffer和StringBuilder类
+	1.StringBuffer --- 线程安全 
+	2.StringBuilder --- 速度快 (多数情况下建议使用，除非要求线程安全)
+	3.StringBuffer主要方法介绍：
+		public StringBuffer append(String s)  //将指定的字符串追加到此字符序列。
+		public StringBuffer reverse()	//将此字符序列用其反转形式取代。
+		public delete(int start, int end)	//移除此序列的子字符串中的字符。
+		public insert(int offset, int i)	//将 int 参数的字符串表示形式插入此序列中。
+		replace(int start, int end, String str)	//使用给定 String 中的字符替换此序列的子字符串中的字符。
+		其他跟String类相似
+
+第五记：	数组
+	1.定义：存储相同类型的一组数据
+	2.声明：dataType[] arrayRefVar;	//首选 	dataType arrayRefVar[];	//次选
+	3.创建：java语言使用new来创建	arrayRefVar = new dataType[arraySize];	
+		   dataType[] arrayRefVar = new dataType[arraySize];
+	4.处理：多个元素 要以来循环来操作
+	5.foreach循环：类似 oc中的for...in循环
+			eg：public class Test{
+					public static void main (String[] args){
+						double[] myList = {1.9, 2.9, 3.4, 3.5};
+						for(double element: myList)
+						{
+							System.out.println(element);
+						} 
+					}
+				}
+	6.数组作为传入的参数：
+			eg：public static void printArray(int[] array){
+				}
+	7.数组作为返回的参数：
+			eg：public static int[] retuenArray(int[] array){
+				}
+	8.多维数组：
+			eg：String array[][] = new String[3][4];
+
+第六记：Arrays类
+	1.java.util.Arrays中所有方法都是静态的
+	2.给数组赋值：fill
+	3.给数组排序：sort 默认升序
+	4.比较数组：equals
+	5.查找数组元素：binarySearch 二分法查找
+
+
+
+
+
+
+
